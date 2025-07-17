@@ -4,10 +4,6 @@
 > [!warning]
 > 本栏目收录的API均为互联网上收集，如有侵权行为请联系duococo管理人员删除！
 
-<br>
-</div>
-
-
 ## 🔄 更新日志
 
 ### 最新版本
@@ -24,9 +20,7 @@ duococo成立
 
 </details>
 <div align="right">
-</div>
-
-<br>
+</div> <!-- 如果这里不需要对齐，可以直接删除这两行 -->
 
 ## 🤝 参与贡献
 <p>如果你是<b> 站长/服务贡献商 </b>可以
@@ -35,22 +29,16 @@ duococo成立
 <p>如果你是<b> 前端开发、设计师 </b>可以
 直接添加QQ 3660539282咨询</p>
 
-
-<br>
-
 ### ✨API收集地址:
 
 1. [夏柔API](https://api.aa1.cn/)
 1. [虚位以待](https://github.com/duococo/cocoapi/issues)
-
-<br>
 
 ## 🙏 特别鸣谢
 
 ### 核心团队
 
 - [Explore114](https://github.com/Explore114) - 项目作者
-
 
 ### 贡献者墙
 暂无
