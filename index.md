@@ -29,11 +29,10 @@ import { VPTeamMembers } from 'vitepress/theme'
 const members = [
   {
     avatar: 'https://static.codemao.cn/flowchunkflex/Hk-C9uvIxx.jpg?hash=FqLgfIjRXxxDq_Mot4VozW6yBL10',
-    name: 'Evan You',
-    title: 'Creator',
+    name: 'Explore114',
+    title: '项目发起者，文档编写人员',
     links: [
       { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
     ]
   },
   
@@ -42,6 +41,6 @@ const members = [
 
 # 产💩团队
 
-你好coco！
+努力写文档的多儿们！
 
 <VPTeamMembers size="small" :members />
