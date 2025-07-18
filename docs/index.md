@@ -34,7 +34,8 @@ const members = [
     links: [
       { icon: 'gitee', link: 'https://gitee.com/hinincs' },
       { icon: 'qq', link: 'https://qm.qq.com/q/WUR6qpYr8Q' },
-      { icon: 'email_icon', link: 'mailto:19877809391@163.com' },
+      { icon: email_icon, link: 'mailto:19877809391@163.com' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/1791848194'}
     ]
   }
+</script>
