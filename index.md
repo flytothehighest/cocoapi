@@ -25,17 +25,23 @@ features:
 
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
-const email_icon = {svg: '<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M14.95 3.684L8.637 8.912a1 1 0 0 1-1.276 0l-6.31-5.228A1 1 0 0 0 1 4v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-.05-.316M2 2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m-.21 1l5.576 4.603a1 1 0 0 0 1.27.003L14.268 3z"/></svg>'}
+
 const members = [
   {
-    avatar: 'http://q.qlogo.cn/headimg_dl?dst_uin=3660539282&spec=640&img_type=jpg',
-    name: 'Hinincs',
-    title: '项目发起人，编写人',
+    avatar: 'https://static.codemao.cn/flowchunkflex/Hk-C9uvIxx.jpg?hash=FqLgfIjRXxxDq_Mot4VozW6yBL10',
+    name: 'Evan You',
+    title: 'Creator',
     links: [
-      { icon: 'gitee', link: 'https://gitee.com/hinincs' },
-      { icon: 'qq', link: 'https://qm.qq.com/q/WUR6qpYr8Q' },
-      { icon: email_icon, link: 'mailto:19877809391@163.com' },
-      { icon: 'bilibili', link: 'https://space.bilibili.com/1791848194'}
+      { icon: 'github', link: 'https://github.com/yyx990803' },
+      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
     ]
-  }
+  },
+  
+]
 </script>
+
+# 产💩团队
+
+你好coco！
+
+<VPTeamMembers size="small" :members />
