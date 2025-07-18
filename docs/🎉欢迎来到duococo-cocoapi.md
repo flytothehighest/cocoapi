@@ -1,49 +1,15 @@
----
-outline: deep
----
+# 🎉 欢迎来到cocoapi手册！
 
-# Runtime API Examples
+::: danger 吕诗涵警告😡😨
 
-This page demonstrates usage of some of the runtime APIs provided by VitePress.
+我们的API均为互联网搜索，如果您不想公开此API或不想我们二次编写API文档请与duococo团队联系，我们将立刻删除此API文档！
 
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files:
+🙏承蒙您对duococo和cocoapi的厚爱！
+:::
+::: tip 想象永无止境，探索创作上限
+本手册旨在为使用Kitten·Coco编辑器的训练师们提供好用、稳定、有实际意义的API。
 
-```md
-<script setup>
-import { useData } from 'vitepress'
+愿您在cocoapi的学习和应用中获得卓越的体验！
+:::
 
-const { theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
-## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+::: tip 我们将会持续更新API文档，请持续关注！同时，部分无法使用的api每隔1周到1个月删除，最长不会超过1世纪（bushi）

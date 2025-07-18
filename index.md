@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "duococo"
+  name: "duococo-cocoapi"
   text: "多coco-cocoAPI为您提供超好用的API，让您在文档中掌握API的用法，收获常用、好用API"
   tagline: My great project tagline
   actions:
@@ -37,7 +37,7 @@ const members = [
 ]
 </script>
 
-# 产💩团队
+# 编写/开发团队
 
 努力写文档的多儿们！
 
