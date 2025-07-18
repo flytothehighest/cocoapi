@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /Document/markdown-examples
+      link: /docs/markdown-examples
     - theme: alt
       text: API Examples
-      link: /Document/api-examples
+      link: /docs/api-examples
 
 features:
   - title: 定期更新
