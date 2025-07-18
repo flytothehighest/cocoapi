@@ -17,11 +17,21 @@ export default defineConfig({
         items: [
           { text: '欢迎来到duococo-cocoapi', link: 'docs/🎉欢迎来到duococo-cocoapi' }
         ]
+      },
+      {
+        text: 'api',
+        items: [
+          { text: '编程猫对象存储', link: 'docs/API/编程猫对象存储' }
+        ]
       }
     ],
+    
+
+    
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
+  lastUpdated: true // 合并到主配置对象中
 })
