@@ -8,11 +8,9 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /docs/markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /docs/api-examples
+      text: go go go!
+      link: /docs/🎉欢迎来到duococo-cocoapi
+
 
 features:
   - title: 定期更新
