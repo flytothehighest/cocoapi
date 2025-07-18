@@ -10,9 +10,7 @@ hero:
     - theme: brand
       text: go go go!
       link: /docs/🎉欢迎来到duococo-cocoapi
-  image:
-  src: /icon.png
-  alt: Duococo Logo
+
 
 
 features:
