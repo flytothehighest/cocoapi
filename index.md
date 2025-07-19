@@ -11,7 +11,7 @@ hero:
       text: go go go!
       link: /docs/🎉欢迎来到duococo-cocoapi
   image:
-      src: /icon.png
+      src: https://static.codemao.cn/flowchunkflex/H1sjasuIel.png?hash=FselMQdjHd3PH7Do8ri_fLrPK4kW
       alt: 这是一个多儿
 
 
