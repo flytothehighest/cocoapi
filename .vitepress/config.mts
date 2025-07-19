@@ -26,12 +26,19 @@ export default defineConfig({
       }
     ],
     
-
+    search: {   // 搜索
+      provider: 'local'
+    },
     
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   },
-  lastUpdated: true // 合并到主配置对象中
+  lastUpdated: true // 显示最后修改时间
+
 })
+
+
+
+
