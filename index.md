@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "duococo-cocoapi"
   text: "多coco-cocoAPI为您提供超好用的API，让您在文档中掌握API的用法，收获常用、好用API"
-  tagline: My great project tagline
+  tagline: duococo教程系列
   actions:
     - theme: brand
       text: go go go!
