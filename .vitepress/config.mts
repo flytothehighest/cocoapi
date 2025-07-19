@@ -10,6 +10,10 @@ export default defineConfig({
       { text: '主页', link: '/' },
       { text: '手册', link: '/docs/🎉欢迎来到duococo-cocoapi' }
     ],
+        footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2025-present Duococo'
+    },
 
     sidebar: [
       {
