@@ -24,7 +24,8 @@ export default defineConfig({
                 {
         text: '生活类',
         items: [
-          { text: '每日一言', link: 'docs/API/生活/每日一言' }  
+          { text: '每日一言', link: 'docs/API/生活/每日一言' }
+            
           
           ]
         },
@@ -39,7 +40,16 @@ export default defineConfig({
         
           
         ]
-      }
+      },
+
+            {
+        text: '已封装的API',
+        items: [
+          { text: 'what是已封装的API', link: 'docs/已封装的API/what是已封装的API' }
+        ]
+      },
+
+        
     ],
     
     search: {   // 搜索
