@@ -19,9 +19,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'api',
+        text: 'API列表',
         items: [
-          { text: '编程猫对象存储', link: 'docs/API/编程猫对象存储' }
+                {
+        text: '生活类',
+        items: [
+          { text: '每日一言', link: 'docs/API/生活/每日一言' }  
+          
+          ]
+        },
+
+                        {
+        text: '工具类',
+        items: [
+          { text: '编程猫对象存储', link: 'docs/API/工具/编程猫对象存储' }  
+          
+          ]
+        },
+        
+          
         ]
       }
     ],
