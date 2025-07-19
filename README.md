@@ -8,15 +8,24 @@
 
 ### 最新版本
 
-#### v0.0.0（2025-7-17）
+#### v0.1.0（2025-7-20）
 
-项目建仓
+本次Duococo-cocoapi教程文档大版本更新内容：
+-给顶部栏添加毛玻璃样式，修改提示容器样式
+
+-侧边栏添加图标
+
+-API列表分类项支持隐藏
+
+-修改代码块样式
+
+在线体验链接：https://cocoapi.codejun.top/
 
 <details><summary><kbd>查看更多历史版本</kbd></summary>
 
 #### v0.0.0 (2025-7-17)
 
-duococo成立
+暂无
 
 </details>
 <div align="right">
