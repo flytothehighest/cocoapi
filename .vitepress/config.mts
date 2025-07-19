@@ -45,7 +45,7 @@ export default defineConfig({
             {
         text: '已封装的API',
         items: [
-          { text: 'what是已封装的API', link: 'docs/已封装的API/what是已封装的API' }
+          { text: 'what是已封装的API', link: 'docs/已封装的API/what是已封装的API？' }
         ]
       },
 
