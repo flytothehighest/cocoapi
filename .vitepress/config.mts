@@ -43,6 +43,15 @@ export default defineConfig({
           
           ]
         },
+
+        {
+        text: '学习类',
+        collapsed: true,
+        items: [
+          { text: '万能解题助手', link: 'docs/API/学习/万能解题助手' }
+          
+          ]
+        },
         
           
         ]
