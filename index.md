@@ -25,14 +25,14 @@ features:
     details: 简单的不用教，不简单的文档里会写。小训练师，你们就甭操心啦！
 ---
 
-<script setup>
-import { VPTeamMembers } from 'vitepress/theme'
+
+
 
 <br>
 <br>
 
 
-
+<script>
 const members = [
   {
     avatar: 'https://static.codemao.cn/flowchunkflex/Hk-C9uvIxx.jpg?hash=FqLgfIjRXxxDq_Mot4VozW6yBL10',
