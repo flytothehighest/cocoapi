@@ -14,7 +14,7 @@
 同时，部分无法使用的api每隔1周到1个月删除，最长不会超过1世纪（bushi）
 :::
 
-::: tip 使用须知'p00
+::: tip 使用须知
 为了保证您使用的API正常服务，建议您在使用前，在顶部栏右侧找到 ![测试图标](https://static.codemao.cn/flowchunkflex/rkXMHojUll.png?hash=FsH5wD4YSS3z2GJfm2oy45OqKat7) 对API进行测试 
 
 tips：当API较多时不妨试试**ctrl+f**进行搜索
