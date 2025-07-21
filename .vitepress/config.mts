@@ -6,6 +6,7 @@ export default defineConfig({
   description: "多coco-cocoAPI为您提供超好用的API，让您在文档中掌握API的用法，收获常用、好用API",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: 'https://static.codemao.cn/flowchunkflex/HJC7GCKIex.png?hash=Fsj5Nh4ZdrDn4SFYMIkrsDI-oKfT',
     nav: [
       { text: '主页', link: '/' },
       { text: '手册', link: '/docs/🎉欢迎来到duococo-cocoapi' }
@@ -74,7 +75,8 @@ export default defineConfig({
     
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/duococo/cocoapi' },
+      { icon: 'https://static.codemao.cn/flowchunkflex/ByJBQSsUge.svg?hash=FuBuk6qfmATwKiWA_1Ucv8Xjudx5', link: 'https://duococotest.pages.dev/apitest' }
     ]
   },
   lastUpdated: true // 显示最后修改时间
