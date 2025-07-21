@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>API状态检测</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <style>
+    * {
+      cursor: default;
+      box-sizing: border-box;
+    }
+    html,body {
+      display: flex;flex-direction: column; align-items: center;
+    }
+    #app {
+      width:800px;
+    }
+    .controls {
+      display: flex; justify-content: flex-end;
+    }
+    .button {
+      background-color: rgb(57, 166, 255);border: none;color:white;display: flex;padding: 6px 10px;
+    }
+    .button:active {
+      transform: scale(0.95);
+    }
+
+    .tab-header {
+      display: flex; align-items: center;
+    }
+    .tab-header-item {
+      padding: 4px 8px; border: 1px solid #ccc; border-top-left-radius: 6px; border-top-right-radius: 6px;
+    }
+    .tab-header-item-active {
+      border: 1px solid rgb(57, 166, 255); background-color: rgb(57, 166, 255);color:white;
+    }
+
+    .tab-bodyer {
+      width:100%;border-top:10px solid rgb(57, 166, 255);overflow-y: auto;
+    }
+    .tab-bodyer-item {
+      display: none;
+    }
+    .tab-bodyer-item-active {
+      display: flex; flex-direction: column;
+    }
+
+    .tab-bodyer-item-server {
+      width:100%;height:60px;border:1px solid rgb(57, 166, 255); background-color: rgb(207, 233, 255);border-radius: 6px;margin-top:10px;
+      display: flex;justify-content: space-between;align-items: center;
+    }
+
+    .check-status {
+      display: flex; justify-content: flex-start; align-items: center;
+    }
+
+    /* loading 效果 */
+    .circular-box {
+      animation: loading-rotate 2s linear infinite;
+    }
+    .circle {
+      stroke-dasharray: 900;
+      stroke-dashoffset: -3;
+      animation: loading-dash 1.5s ease-in-out infinite;
+    }
+    @keyframes loading-dash {
+      0% { stroke-dasharray: 1, 200; stroke-dashoffset: 0; }
+      50% { stroke-dasharray: 90, 150; stroke-dashoffset: -40; }
+      100% { stroke-dasharray: 90, 150; stroke-dashoffset: -120; }
+    }
+    @keyframes loading-rotate {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h2>API状态检测</h2>
+    <div class="controls">
+      <button class="button" @click="start" :disabled="status === 'Started'" style="margin-left:100px;">
+        <div v-if="status === 'Stoped'">开始</div>
+        <div v-if="status === 'Started'">进行中</div>
+      </button>
+      <button class="button" @click="stop" :disabled="status === 'Stoped'" style="margin-left:10px;">停止</button>
+    </div>
+
+    <div style="margin-top:20px;">
+      <div class="tab-header">
+        <div v-for="(group, index) in serverGroups" :key="index" :class="['tab-header-item', currentTabIndex === index ? 'tab-header-item-active' : '']" @click="switchGroup(index)">
+          {{ group.groupName }}
+        </div>
+      </div>
+      <div class="tab-bodyer">
+        <div v-for="(group, index) in serverGroups" :key="index" :class="['tab-bodyer-item', currentTabIndex === index ? 'tab-bodyer-item-active' : '']">
+          <div v-for="(server, ii) in group.servers" :key="ii" class="tab-bodyer-item-server">
+            <div style="width:100%;padding-left:20px;">
+              <div style="font-size:20px;font-weight: bold;">{{ server.name }}</div>
+              <div style="color:#444;">{{ server.url }}</div>
+            </div>
+            <div style="width:200px;display: flex;justify-content: flex-start;align-items: center;">
+              <div v-if="server.checkStatus === 'checking'" class="check-status">
+                <svg style="width:26px;height:26px;" viewBox="0 0 50 50" class="circular-box">
+                  <circle class="circle" cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke="blue"></circle>
+                </svg>
+                <div style="margin-left:10px;">检查中...</div>
+              </div>
+              <div v-if="server.checkStatus === 'fail'" class="check-status">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px;" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+                <div style="margin-left:2px;">连接失败</div>
+              </div>
+              <div v-if="server.checkStatus === 'timeout'" class="check-status">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px;" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M20.986 12.502a9 9 0 1 0 -5.973 7.98" />
+                  <path d="M12 7v5l3 3" />
+                  <path d="M19 16v3" />
+                  <path d="M19 22v.01" />
+                </svg>
+                <div style="margin-left:6px;">超时</div>
+              </div>
+              <div v-if="server.checkStatus === 'success'" class="check-status">
+                <svg xmlns="http://www.w3.org/2000/svg" style="width:30px;height:30px;" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M5 12l5 5l10 -10" />
+                </svg>
+                <div style="margin-left:2px;">正常</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue
+
+    createApp({
+      setup() {
+        const serverGroups = ref([
+          {
+            groupName: '调试没有配置参数，部分API出现异常属于正常现象',
+            servers: [
+              { name: 'Duococo-cocoapi站点', url: 'https://cocoapi.codejun.top/', checkStatus: 'none' },
+              { name: '编程猫对象存储', url: 'https://api.pgaot.com/user/up_cat_file', checkStatus: 'none' },
+              { name: '每日一言（似乎不会返回状态码，异常属于正常现象）', url: 'https://v.api.aa1.cn/api/yiyan/index.php', checkStatus: 'none' },
+              { name: '万能解题助手', url: 'https://api.jkyai.top/API/wnjtzs.php', checkStatus: 'none' },
+            ]
+          }
+        ])
+
+        const currentTabIndex = ref(0)
+        const status = ref('Stoped')
+
+        function start() {
+          status.value = 'Started'
+          checkCurrentServersGroup().then(() => {
+            status.value = 'Stoped'
+          })
+        }
+
+        function stop() {
+          status.value = 'Stoped'
+        }
+
+        function checkCurrentServersGroup() {
+          const servers = serverGroups.value[currentTabIndex.value].servers
+          const promises = []
+
+          servers.forEach(server => {
+            server.checkStatus = 'checking'
+            const controller = new AbortController()
+            const signal = controller.signal
+
+            const timeout = setTimeout(() => {
+              controller.abort()
+              server.checkStatus = 'timeout'
+            }, 15000)
+
+            const fetchPromise = fetch(server.url, { method: 'GET', signal: signal })
+              .then(response => {
+                clearTimeout(timeout)
+                if (response.ok) {
+                  server.checkStatus = 'success'
+                  return response.json()
+                } else {
+                  server.checkStatus = 'fail'
+                }
+              })
+              .then(result => {
+                console.info('res:', result)
+              })
+              .catch(error => {
+                if (error.name === 'AbortError') {
+                  server.checkStatus = 'timeout'
+                  console.warn('请求超时')
+                } else {
+                  server.checkStatus = 'fail'
+                  console.error('请求失败:', error)
+                }
+              })
+
+            promises.push(fetchPromise)
+          })
+
+          return Promise.all(promises)
+        }
+
+        function switchGroup(index) {
+          currentTabIndex.value = index
+        }
+
+        return {
+          serverGroups, currentTabIndex, status, start, stop, switchGroup
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+</html>
