@@ -6,13 +6,13 @@ export default defineConfig({
   description: "多coco-cocoAPI为您提供超好用的API，让您在文档中掌握API的用法，收获常用、好用API",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: 'https://static.codemao.cn/flowchunkflex/HJC7GCKIex.png?hash=Fsj5Nh4ZdrDn4SFYMIkrsDI-oKfT',
+    logo: 'https://static.codemao.cn/flowchunkflex/ryW6fbpIxg.png?hash=Fi87WXogaaaZqReQugMCPjZOPXhL',
     nav: [
       { text: '主页', link: '/' },
       { text: '手册', link: '/docs/欢迎来到duococo-cocoapi' }
     ],
     footer: {
-      message: '<div style="text-align:left;"> <p align="left">友情链接</p> </a><a href="https://xunho.xyz/">寻何Xunho</a> | </a><a href="https://apanzinc.top/">apanzinc的个人主页</a> | </a><a href="https://team.hopex.top/#about">青云学研团队</a> </div> <br> Released under the MIT License.',
+      message: '<div style="text-align:left;"> <p align="left">友情链接</p> </a><a href="https://xunho.xyz/">寻何Xunho</a> | </a><a href="https://apanzinc.top/">apanzinc的个人主页</a> | </a><a href="https://team.hopex.top/#about">青云学研团队</a> | <a href="https://nocode.host/bfl3x5">coco快捷导航</a></div> <br> Released under the MIT License.',
       copyright: 'Copyright © 2025-present Duococo <br><br> ',
 
 
