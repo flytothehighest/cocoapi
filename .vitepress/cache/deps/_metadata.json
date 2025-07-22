@@ -1,52 +1,52 @@
 {
-  "hash": "7aa5d51a",
-  "configHash": "c40712ab",
-  "lockfileHash": "f574b97d",
-  "browserHash": "8881447d",
+  "hash": "58364d7f",
+  "configHash": "cef1e3a0",
+  "lockfileHash": "f70c41b7",
+  "browserHash": "656795e7",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "fe73e519",
+      "fileHash": "b27f8620",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "c3100184",
+      "fileHash": "f93df142",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "e1070888",
+      "fileHash": "9a427d6f",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "765784e9",
+      "fileHash": "52ce45be",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "4f06f812",
+      "fileHash": "e71b9386",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "2e272836",
+      "fileHash": "da112ab0",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-ECKPOFXB": {
-      "file": "chunk-ECKPOFXB.js"
+    "chunk-OY43B7R7": {
+      "file": "chunk-OY43B7R7.js"
     },
-    "chunk-W6V53FDX": {
-      "file": "chunk-W6V53FDX.js"
+    "chunk-SW2YKR2Q": {
+      "file": "chunk-SW2YKR2Q.js"
     }
   }
 }

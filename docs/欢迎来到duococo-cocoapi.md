@@ -1,4 +1,4 @@
-# 🎉 欢迎来到cocoapi手册！
+# 🎉 欢迎来到cocoapi手册
 
 ::: danger 吕诗涵警告😡😨
 
@@ -15,10 +15,11 @@
 :::
 
 ::: tip 使用须知
-为了保证您使用的API正常服务，建议您在使用前，在顶部栏右侧找到 ![测试图标](https://static.codemao.cn/flowchunkflex/rkXMHojUll.png?hash=FsH5wD4YSS3z2GJfm2oy45OqKat7) 对API进行测试 
+为了保证您使用的API正常服务，建议您在使用前，在顶部栏右侧找到 ![测试图标](https://static.codemao.cn/flowchunkflex/rkXMHojUll.png?hash=FsH5wD4YSS3z2GJfm2oy45OqKat7) 对API进行测试
 
 tips：当API较多时不妨试试**ctrl+f**进行搜索
 :::
 
 ## 祝福
-祝各位参加 **2025编程猫社区夏日创作节** 的小训练师们参赛快乐！也欢迎多多使用我们收录的API哟！🎉 
+
+祝各位参加 **2025编程猫社区夏日创作节** 的小训练师们参赛快乐！也欢迎多多使用我们收录的API哟！🎉

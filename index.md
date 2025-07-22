@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: go go go!
-      link: /docs/🎉欢迎来到duococo-cocoapi
+      link: /docs/欢迎来到duococo-cocoapi
   image:
       src: https://static.codemao.cn/flowchunkflex/HJC7GCKIex.png?hash=Fsj5Nh4ZdrDn4SFYMIkrsDI-oKfT
       alt: 这是一个多儿
@@ -25,14 +25,11 @@ features:
     details: 简单的不用教，不简单的文档里会写。小训练师，你们就甭操心啦！
 ---
 
-
-
-
 <br>
 <br>
 
-
-<script>
+<script setup>
+  import { VPTeamMembers } from 'vitepress/theme'
 const members = [
   {
     avatar: 'https://static.codemao.cn/flowchunkflex/Hk-C9uvIxx.jpg?hash=FqLgfIjRXxxDq_Mot4VozW6yBL10',
@@ -40,6 +37,15 @@ const members = [
     title: '项目发起者，文档编写人员',
     links: [
       { icon: 'github', link: 'https://github.com/yyx990803' },
+    ]
+  },
+    {
+    avatar: 'https://foruda.gitee.com/avatar/1737804117832914260/14728329_enzyme-youming-studio_1737804117.png!avatar200',
+    name: '酶游明',
+    title: '文档编写人员',
+    links: [
+      { icon: 'github', link: 'https://github.com/mymstudio/' },
+      { icon: 'gitee', link: 'https://gitee.com/enzyme-youming-studio' },
     ]
   },
   
