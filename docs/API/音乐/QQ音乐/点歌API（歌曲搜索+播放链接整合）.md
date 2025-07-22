@@ -194,7 +194,7 @@ ekey解密网站：<https://um-react.netlify.app/>
 
 | 接口名称     | 参数类型                                    | 参数说明                                    |
 | ----------- | ------------------------------------------ | ------------------------------------------ |
-| interval   | <Badge type="info" text="number" />          | 歌曲总时长         |
+| interval   | <Badge type="info" text="string" />          | 歌曲总时长         |
 | link      | <Badge type="info" text="string" />        |  歌曲官网链接        |
 | size      | <Badge type="info" text="string" />        | 歌曲文件大小    |
 | kbps         | <Badge type="info" text="string" />        | 歌曲文件比特率   |
