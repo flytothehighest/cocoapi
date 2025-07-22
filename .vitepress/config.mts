@@ -15,7 +15,7 @@ export default defineConfig({
     ],
     footer: {
       message: '<div style="text-align:left;"> <p align="left">友情链接</p> </a><a href="https://xunho.xyz/">寻何Xunho</a> | </a><a href="https://apanzinc.top/">apanzinc的个人主页</a> | </a><a href="https://team.hopex.top/#about">青云学研团队</a> | <a href="https://nocode.host/bfl3x5">coco快捷导航</a></div> <br> Released under the MIT License.',
-      copyright: 'Copyright © 2025-present Duococo <br><br> ',
+      copyright: 'Copyright © 2025-present Duococo',
     
 
     },
