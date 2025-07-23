@@ -5,13 +5,23 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
+import MNavLinks from './components/MNavLinks.vue'
+
 
 export default {
   extends: DefaultTheme,
   Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
+    const props: Record<string, any> = {}
+    // 获取 frontmatter
+    const { frontmatter } = useData()
+
+    /* 添加自定义 class */
+    if (frontmatter.value?.layoutClass) {
+      props.class = frontmatter.value.layoutClass
+    }
+
+    return h(DefaultTheme.Layout, props)
+    
   },
   
 
@@ -39,7 +49,10 @@ export default {
       true
     );
     },
+
+    
   enhanceApp({ app, router, siteData }) {
+        app.component('MNavLinks' , MNavLinks)
     // ...
   }
 } satisfies Theme

@@ -1,61 +1,67 @@
 {
-  "hash": "961bed4a",
+  "hash": "5d40be79",
   "configHash": "c40712ab",
-  "lockfileHash": "1e8ff9ed",
-  "browserHash": "add66938",
+  "lockfileHash": "8f15a5bf",
+  "browserHash": "06a741ff",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "8eb38e65",
+      "fileHash": "25648c16",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "f0325606",
+      "fileHash": "c79d84c6",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "f6538a43",
+      "fileHash": "113713ec",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "351800e1",
+      "fileHash": "c13862de",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "7d021628",
+      "fileHash": "9f7445a3",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "8bae22de",
+      "fileHash": "72522ffd",
       "needsInterop": false
     },
     "vitepress-plugin-comment-with-giscus": {
       "src": "../../../node_modules/vitepress-plugin-comment-with-giscus/lib/giscus.js",
       "file": "vitepress-plugin-comment-with-giscus.js",
-      "fileHash": "bf8946c0",
+      "fileHash": "1e7fc3b2",
+      "needsInterop": false
+    },
+    "@mdit-vue/shared": {
+      "src": "../../../node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "a360e2f8",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-ECKPOFXB": {
-      "file": "chunk-ECKPOFXB.js"
-    },
-    "chunk-W6V53FDX": {
-      "file": "chunk-W6V53FDX.js"
-    },
     "giscus-aTimukGI-JLMKWH2E": {
       "file": "giscus-aTimukGI-JLMKWH2E.js"
+    },
+    "chunk-AKQBXH3S": {
+      "file": "chunk-AKQBXH3S.js"
+    },
+    "chunk-EAEFJUV4": {
+      "file": "chunk-EAEFJUV4.js"
     }
   }
 }

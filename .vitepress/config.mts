@@ -11,7 +11,14 @@ export default defineConfig({
     logo: 'https://static.codemao.cn/flowchunkflex/ryW6fbpIxg.png?hash=Fi87WXogaaaZqReQugMCPjZOPXhL',
     nav: [
       { text: '主页', link: '/' },
-      { text: '手册', link: '/docs/欢迎来到duococo-cocoapi' }
+      { text: '手册', link: '/docs/欢迎来到duococo-cocoapi' },
+            {
+        text: '其他文档',
+        items: [
+          { text: 'Coco快捷导航', link: '/docs/nav/index' },
+
+        ]
+      }
     ],
     footer: {
       message: 'Released under the MIT License.',
