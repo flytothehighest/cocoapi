@@ -94,7 +94,21 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.yuque.com/xunho/horkj'
       },
       
+      
     ],
     
+    
   },
+  {
+    title: '友情链接',
+    items: [
+      {
+        icon: 'https://static.codemao.cn/flowchunkflex/SyIlPHR8ge.svg?hash=Fg2n024igtNRapBHKkpHU1W4sby2',
+        title: 'XJ控件库',
+        desc: '耗用的',
+        link: 'https://xjwangdage.feishu.cn/wiki/KQECwTAJqiVpXjk3ZtFcqEDVnyc?from=from_copylink'
+      },
+    ]
+  },
+  
 ]

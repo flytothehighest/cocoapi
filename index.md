@@ -36,7 +36,7 @@ const members = [
     name: 'Explore114',
     title: '项目发起者，文档编写人员',
     links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
+      { icon: 'github', link: 'https://github.com/Explore114' },
     ]
   },
     {
@@ -57,3 +57,6 @@ const members = [
 努力写文档的多儿们！
 
 <VPTeamMembers size="small" :members />
+
+## 友情链接
+<a href="https://duococo.com/docs/nav/#友情链接">
