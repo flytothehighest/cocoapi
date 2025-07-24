@@ -59,4 +59,4 @@ const members = [
 <VPTeamMembers size="small" :members />
 
 ## 友情链接
-<a href="https://cocoapi.codejun/docs/nav/#友情链接">友情链接从陋室（底部栏）升级到校长办公室啦！点击看看吧！</a>
+<a href="/docs/nav/#友情链接">友情链接从陋室（底部栏）升级到校长办公室啦！点击看看吧！</a>
