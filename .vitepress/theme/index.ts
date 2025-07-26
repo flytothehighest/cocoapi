@@ -6,10 +6,12 @@ import './style.css'
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 import MNavLinks from './components/MNavLinks.vue'
+import ArticleMetadata from "./components/ArticleMetadata.vue"
 
 
 export default {
   extends: DefaultTheme,
+  
   Layout: () => {
     const props: Record<string, any> = {}
     // 获取 frontmatter
@@ -53,6 +55,7 @@ export default {
     
   enhanceApp({ app, router, siteData }) {
         app.component('MNavLinks' , MNavLinks)
-    // ...
+    // 注册全局组件
+    app.component('ArticleMetadata' , ArticleMetadata)
   }
 } satisfies Theme

@@ -20,6 +20,8 @@ export default defineConfig({
         ]
       }
     ],
+
+    
     footer: {
       message: 'Released under the MIT License and Attribution-NonCommercial 4.0 International.',
       copyright: 'Copyright © 2025-present Duococo',
@@ -114,7 +116,19 @@ export default defineConfig({
       }
     ]
   },
-  lastUpdated: true // 显示最后修改时间
+  lastUpdated: true, // 显示最后修改时间
+
+    //markdown配置
+  markdown: {
+    // 组件插入h1标题下
+    config: (md) => {
+      md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+          let htmlResult = slf.renderToken(tokens, idx, options);
+          if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+          return htmlResult;
+      }
+    }
+  }
 
 })
 
