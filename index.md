@@ -10,9 +10,8 @@ hero:
     - theme: brand
       text: go go go!
       link: /docs/欢迎来到duococo-cocoapi
-        actions:
     - theme: alt
-      text: coco快捷导航
+      text: coco快捷导航pro max！
       link: /docs/nav/
   image:
       src: https://static.codemao.cn/flowchunkflex/ryW6fbpIxg.png?hash=Fi87WXogaaaZqReQugMCPjZOPXhL
