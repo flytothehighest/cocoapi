@@ -56,6 +56,7 @@ export default defineConfig({
             items: [
               { text: '编程猫对象存储', link: 'docs/API/工具/编程猫对象存储' },
               { text: '敏感词检测', link: 'docs/API/工具/敏感词检测' },
+              { text: 'Amethyst Free Intelligence', link: 'docs/API/工具/Amethyst Free Intelligence' },
 
             ]
           },
