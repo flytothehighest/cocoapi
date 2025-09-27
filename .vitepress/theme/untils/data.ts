@@ -2,6 +2,17 @@ import type { NavData } from './types'
 
 export const NAV_DATA: NavData[] = [
   {
+    title: '编辑器',
+    items: [
+      {
+        icon: 'https://favicon.im/coco.codemao.cn',
+        title: 'Coco编辑器',
+        desc: '☝️个官方编辑器',
+        link: 'https://coco.codemao.cn/'
+      },
+    ]
+  },
+  {
     title: '控件库',
     items: [
       {
@@ -21,7 +32,6 @@ export const NAV_DATA: NavData[] = [
           text: '何我寻月',
           type: 'tip',
         },
-
         desc: '功能新颖，易用简单',
         link: 'https://www.yuque.com/xunho/horkj'
       },
@@ -39,13 +49,13 @@ export const NAV_DATA: NavData[] = [
         icon: 'https://static.codemao.cn/flowchunkflex/SyIlPHR8ge.svg?hash=Fg2n024igtNRapBHKkpHU1W4sby2',
         title: 'ZX控件集',
         badge: {
-          text: 'ZX',
-          type: 'tip',
+          text: '未认领',
+          type: 'warning',
         },
         desc: '现在我还不知道这个的作者，如果作者看到请及时和我联系！',
         link: 'https://zx-create.feishu.cn/wiki/DKKxw1DSpiL2g0kAcB8cXCmAnEb'
       },
-                  {
+      {
         icon: 'https://static.codemao.cn/flowchunkflex/SyIlPHR8ge.svg?hash=Fg2n024igtNRapBHKkpHU1W4sby2',
         title: 'XJ控件库',
         badge: {
@@ -55,10 +65,37 @@ export const NAV_DATA: NavData[] = [
         desc: '骨灰级别的😱',
         link: 'https://xjwangdage.feishu.cn/wiki/KQECwTAJqiVpXjk3ZtFcqEDVnyc?from=from_copylink'
       },
-
-      
+      {
+        icon: 'https://shequ.pgaot.com/favicon.ico',
+        title: '点鸭-CoCo 自定义控件',
+        badge: {
+          text: '点鸭',
+          type: 'tip',
+        },
+        desc: '开箱即用的JavaScript控件商城',
+        link: 'https://shequ.pgaot.com/?mod=cocojs'
+      },
+      {
+        icon: '',
+        title: '青柠系控件',
+        badge: {
+          text: 'calyxor',
+          type: 'tip',
+        },
+        desc: '青柠的恩情还不完✋😭✋',
+        link: 'https://doc.lihouse.xyz/'
+      },
+      {
+        icon: 'https://static.codemao.cn/flowchunkflex/SyIlPHR8ge.svg?hash=Fg2n024igtNRapBHKkpHU1W4sby2',
+        title: '小宏XeLaの控件文档',
+        badge: {
+          text: '未认领',
+          type: 'warning',
+        },
+        desc: '一些小型的的控件（）',
+        link: 'https://xjwangdage.feishu.cn/wiki/KQECwTAJqiVpXjk3ZtFcqEDVnyc?from=from_copylink'
+      },
     ]
-    
   },
   {
     title: '教程文档',
@@ -93,11 +130,7 @@ export const NAV_DATA: NavData[] = [
         desc: '杂烩真豪赤😋',
         link: 'https://www.yuque.com/xunho/horkj'
       },
-      
-      
     ],
-    
-    
   },
   {
     title: '友情链接',

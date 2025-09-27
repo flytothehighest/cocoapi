@@ -38,55 +38,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'API列表',
+        text: 'api.hinincs.top/* 自营API',
         items: [
-          {
-            text: '生活类',
-            collapsed: true,
-            items: [
-              { text: '每日一言', link: 'docs/API/生活/每日一言' }
-
-
-            ]
-          },
-
-          {
-            text: '工具类',
-            collapsed: true,
-            items: [
-              { text: '编程猫对象存储', link: 'docs/API/工具/编程猫对象存储' },
-              { text: '敏感词检测', link: 'docs/API/工具/敏感词检测' },
-              { text: 'Amethyst Free Intelligence', link: 'docs/API/工具/Amethyst Free Intelligence' },
-
-            ]
-          },
-
-          {
-            text: '学习类',
-            collapsed: true,
-            items: [
-              { text: '万能解题助手', link: 'docs/API/学习/万能解题助手' }
-
-            ]
-          },
-
-          {
-            text: '音乐类',
-            collapsed: true,
-            items: [
-              {
-                text: 'QQ 音乐',
-                collapsed: true,
-                items: [
-                  { text: '点歌API（整合）', link: 'docs/API/音乐/QQ音乐/点歌API（歌曲搜索+播放链接整合）' }
-
-                ]
-              }
-
-            ]
-          },
-
-
+          
         ]
       },
 
