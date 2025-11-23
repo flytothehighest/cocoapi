@@ -93,7 +93,7 @@ export const NAV_DATA: NavData[] = [
           type: 'warning',
         },
         desc: '一些小型的的控件（）',
-        link: 'https://xjwangdage.feishu.cn/wiki/KQECwTAJqiVpXjk3ZtFcqEDVnyc?from=from_copylink'
+        link: 'https://btmu8uap4l.feishu.cn/wiki/wikcnnjCV7uB9FxC1CcSevmvAWb'
       },
     ]
   },
