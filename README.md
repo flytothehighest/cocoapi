@@ -1,5 +1,7 @@
 # Duococo-cocoapi
 帮助训练师们寻找到更好用的API
+>[!warning]
+>此仓库为先前PR而存储，因仓库已存档，故解除Fork
 
 > [!warning]
 >本项目已重构！本仓库已存档，请到新仓库Duococo-page
